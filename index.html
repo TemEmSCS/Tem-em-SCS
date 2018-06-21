@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>Tem em São Caetano?</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121172684-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-121172684-1');
+    </script>
+    <!-- Meus Scripts -->
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="map.js"></script>
+  </head>
+  <body>
+    <main>
+      <header>Tem <span id="line">&nbsp;</span> em São Caetano?</header>
+      <script>
+        for(let i=0; i<12; i++){
+          document.write('<a href="#' + i + '"><img src="img/img_' + (i+1) + '.jpg" data="but' + i + '" /><figcaption id="but' + i + '">' + mapaDeNavegacao[i].name.replace(/(Tem )|( em São Caetano\?)/g, '') + '</figcaption></a>');
+        }
+      </script>
+    </main>
+    <div class="loader_warper"><div class="loader"></div></div>
+    <section>
+      <div id="player0" class="player main">
+      </div>
+      <div id="player1" class="player"></div>
+      <div id="player2" class="player"></div>
+      <div id="player3" class="player"></div>
+      <nav>
+        <header>
+          Tem <span class="dropdown"><a href="#" id="tagline">Cultura Popular</a><ul></ul></span>
+        em São Caetano?
+      </header>
+      <aside><a href="#">?</a></aside>
+      </nav>
+      <ul class="perguntas">
+        <li id="p1"><a href="#"></a></li>
+        <li id="p2"><a href="#"></a></li>
+        <li id="p3"><a href="#"></a></li>
+      </ul>
+    </section>
+    <footer>
+      <div class="creditos">
+        <pre>
+          PROGRAMAÇÃO E MONTAGEM
+          EDUARDO LIRON
+
+          PESQUISA, PRODUÇÃO E CAPTURA AUDIOVISUAL
+          MILENE VALENTIR
+          VANESSA RITA
+          DIGA RIOS
+          ANDRÉ SANTOS
+
+          CO-PRODUÇÃO E CAPTURA AUDIOVISUAL
+          GRUPO DE ESTUDOS DE CULTURA INDÍGENA E AFRO-BRASILEIRA DA EME PROF. VICENTE BASTOS
+          BERNADETE MARQUES
+          JENNIFER TORQUATO NUNES
+          JOÃO VICTOR LOURENÇO SILVA
+          MATHEUS CARILLO
+          THIAGO DA SILVA AFONSO
+
+          ESTUDANTES DA EDUCAÇÃO DE JOVENS E ADULTOS – EJA EME PROFESSOR VICENTE BASTOS
+          2FNA
+          COSME CARDOSO FERREIRA
+          ELIAS CARVALHO CRUZ
+          GERAILDO FERREIRA LIMA
+          JOSE JOAQUIM MARIANO
+          MARLI FERREIRA DE BRITO
+
+          3FNA
+          ANTONIA DE LIMA
+          CLEUSA APARECIDA GARCIA PASSERINI
+          EDNA MARIA REIS
+          FRANCINETH AMÉRICO DE BRITO
+          JANIELE MARIA DE LIMA
+          JURACI DE NOVAIS SANTOS
+          MARIA DAS NEVES DE JESUS
+          MARIA DILMA DOS SANTOS
+          MARIA LUSINETE DA SILVA
+          ROSILENE BARBOSA DOS SANTOS
+
+          4FNA
+          ALVINA MARIA DOS SANTOS ANDRADE
+          FERNANDO DE JESUS SILVA
+          ISVALDINA ANA DE SOUSA
+          MARIA DO CARMO ALVES DE SOUSA
+          MATHEUS HELENO DA ROCHA
+          RAIMUNDA CRESSÊNCIA DA SILVA
+          THAINA LIMA DA ROCHA
+
+          5FNA
+          CICERA ILDA ALVES DE SOUSA
+          CLAUDEON FERREIRA CAVALCANTE
+          DIVINA GOMES DE MOURA SANTOS
+          EDSON MARQUES
+          EMIDIA SABINO DOS SANTOS
+          GERALDA LUNA BENFICA
+          IRACEMA MARIA FERREIRA
+          MARCIA MARIA DA CRUZ
+          MARIA ANILDA FERREIRA
+          MARIA DO SOCORRO DA SILVA
+          MARIA ELAINE DA SILVA
+          MARIA FILOMENA DA CONCEIÇÃO
+          MARIA JOSÉ DA SILVA
+          MARIA VALDECI DANTAS BEZERRA MOREIRA
+          MARIA VANDA PEREIRA VIEIRA BRANDÃO FERREIRA
+          RITA DE CÁSSIA FERREIRA DOS SANTOS
+          VICTOR JORGE MOLARES PEREIRA
+          VITÓRIA GONÇALVES DE NOVAIS
+
+          8FNA
+          ALEX NASCIMENTO SAMPAIO
+          ANTÔNIO DA GUIA PEREIRA DO NASCIMENTO
+          EDE FERNANDES MACHADO
+          FABIANA DE SOUZA OKADA
+          FIRMINO VIEIRA DE ARAUJO
+          FRANCISCO LINDEMBERG DE OLIVEIRA
+          GENERINO GOIS DE OLIVEIRA
+          JOÃO VÍCTOR LOURENÇO SILVA
+          JOSEBETO FERNANDES SILVA JÚNIOR
+          JOSEFA BARBOSA DA SILVA
+          LUCAS MATHEUS DE CARVALHO
+          MARCOS ANDRÉ CAETANO DA SILVA
+          MATHEUS FERREIRA COSTA
+          PAULO RYAN DE SOUSA
+          PETRINA OLIVEIRA
+          RENATA DO NASCIMENTO NOZNICA
+          RHAIANNY VITORIA FERREIRA SOUZA
+          VALMIR GOMES DA SILVA
+          VINICIUS CONSULEQUE SANTOS DA SILVA
+          VITORIA ROMERO DA SILVA
+          VIVIANE SANTOS DA SILVA
+
+          8FNB
+          ALLYSON ISRAEL ANDRADE MORAES DA SILVA
+          AMANDA ALCANTARA PEREIRA
+          ANA BEATRIZ LOPES DA SILVA
+          DIMAS DO ESPÍRITO SANTO JUNIOR
+          EDLENE DA SILVA BORGES
+          FILIPE SILVA ALVES DOS SANTOS
+          ISABELLA BATISTA DE VILLA
+          JHONATA JESUS OLIVEIRA
+          JOÃO VICTOR SILVA SANTOS
+          JOÃO VITOR ANTONIO FERREIRA PERES
+          KAIQUE REGIS SANTOS DE JESUS
+          LEONARDO DA SILVA PAES
+          LEONARDO FELIPE GOMES LOPES
+          LUCAS DA SILVA LOURENÇO
+          MARCOS VINÍCIUS FERREIRA DE ARAUJO
+          MATHEUS HENRIQUE IVANOFF RODRIGUES
+          MATHEUS RIAN GOMES DE SOUZA
+          NICHOLLAS PEIXOTO DE ANDRADE
+          VITOR ESTEVÃO DA SILVA
+
+          9FNA
+          ALEX MOREIRA PEREIRA
+          ANA CAROLINE DO NASCIMENTO PEREIRA
+          BRUNO ARAÚJO FÁVERO
+          BRUNO MONTEGGIA GUAZELI LORENZINI
+          CARLOS VICTOR LIMA REZENDE
+          DIANA ALVES NASCIMENTO
+          GEOVANA OLIVEIRA DE BARROS
+          INDARA ROSA SILVA
+          IRAYE ALBERTO SILVA
+          JUSAN CARLOS VINICIUS SOUSA DE LIMA
+          KEVYN CÁSSIO ANDRADE
+          LARISSA GONÇALVES DE OLIVEIRA TELES
+          LEONARDO MILANEZ DA COSTA
+          LUCAS NASCIMENTO LOLO
+          LUIZ MIGUEL DOS SANTOS SILVA
+          MARCELO HENRIQUE TONHETTI KAWAMATA
+          MARIA NEIDE DE JESUS
+          MURILO HENRIQUE DO VALLE PAIVA BRITO
+          PATRICK MORAES DOS SANTOS LIMA
+          RAFAEL LOURENÇO SÁ BARRETO
+          RENATA DA SILVA GONÇALVES
+          RICARDO AURELIO GIORGI PINTO
+          RODRIGO SANTOS GAIA
+          ROSANGELA FAUSTINO PRISTON
+          THAINÁ OLIVEIRA PEREIRA
+          VALQUIRINHA MARIA DE JESUS
+          YASMIN CRISTINA DE ALMEIDA NASCIMENTO
+          ANA PAULA MALLASEN MAZURKIEVIZ
+          IGOR LEONARDO SILVA DE ARAUJO
+          VINÍCIUS SATURNINO SANTOS
+
+          1MNA
+          ADELHO JOSÉ DA SILVA
+          FRANCISCO DAS CHAGAS PEREIRA
+          GABRIEL CIRIGIOLLI
+          GABRIEL DA SILVA MACAMBIRA
+          GABRIELLE MARIM LACERDA
+          GIOVANNA NAHAS
+          GUSTAVO HENRIQUE SILVA
+          JÉSSICA SOARES DA SILVA
+          LARISSA TONIATTI FUSTER
+          MARIA DE LOURDES COELHO FERREIRA
+          MARIA INÊS GALERA DE HALO
+          MATHEUS SALGUEIRO PAINS
+          MILENNE FRANÇA CRUZ DIAS
+          PATRICK NASCIMENTO BEZERRA
+          RAYSSA GONZALES MAGAROTO
+          RENATO SOARES DA SILVA
+          THADEU FELIPE GONÇALVES DE SOUZA
+          VANESSA ALVES DA SILVA
+
+          1MNB
+          ALECSANDRO CORREIA ROCHA GONÇALVES
+          ANDRÉ LUIZ FERREIRA SCHIAVETTE
+          CLAUDIO JOSE TRINDADE
+          GEOVANE DOS SANTOS INCARNACAO
+          GUILHERME RIBEIRO DOS SANTOS
+          GUSTAVO GAGLIARDI AYRES
+          MARIA DO CARMO SILVA
+          MONICA CRISTINA CORRÊA GRISANTE
+          NILSON SEIJI TOMIZAWA
+          RARU RODRIGUES
+          ROSANGELA APARECIDA DA SILVA PAES
+          THIAGO TENIS SANTIAGO
+
+          1MNC
+          ANDRÉ SANTOS GUIMARAES
+          BRUNO ALEXANDRE DIAS CESARIO
+          EBER LUIZ DE SOUZA GONÇALVES
+          EDUARDO RODRIGUES DA SILVA
+          GABRIEL COSTA DE SOUZA SANTANA
+          GUILHERME DUARTE FARIA
+          ISABELA NUNES RIBEIRO
+          JOÃO GABRIEL FERREIRA LUIZ
+          JUAN LUCAS STURARO GUIMARÃES
+          LEONARDO AOYAGI LIMA
+          LEONIZIA MOREIRA CORDEIRO
+          LETÍCIA PRESTI CAETANO DO CARMO
+          LUCAS DOS SANTOS JUS
+          PEDRO HENRIQUE DE ALMEIDA FELICIO
+          RODRIGO SPULVEDA BASTOS
+          SABRINA MARTINS PEREIRA
+          THOMAZ HENRIQUE CRUZ PEREZ
+          YURI STEPANIES
+
+
+          ENTREVISTADOS
+          ADALBERTO CAMPOS LORENTE
+          CRISTINA TOLEDO DE CARVALHO
+          DAVID AUGUSTO SANTOS
+          MESTRE  DIOLINO (DIOLINO DE BRITO )
+          ELTON GONZAGA PEREIRA
+          EMERSON FERNANDO DE SOUZA COSTA
+          ELISABETE JULIA DE ALMEIDA DE ARAÚJO
+          FERNANDA SOUZA
+          MESTRE GERA (GERALDO JOSÉ DOS SANTOS)
+          KARAI MIRIN - ALDEIA GUARANI GUYRAPA-JU
+          LEILA MOLINA LORENTE
+          MARCOS ANTÔNIO BASSANETO
+          MARCOS JULIO AGUIAR
+          ROBSON DA SILVA
+          ROBSON GONZAGA
+          MESTRANDO CINZENTO (RODRIGO RICARDO COSTA)
+          RONALDO LINARES
+          ROSA ANA MARIA DE JESUS
+          ROSANA TITO SANTOS
+          SAMILA ZAMBETTI DOS SANTOS
+          SANDRA CASSIANO
+          TÂNIA FERREIRA DO NASCIMENTO
+
+          GRAFFITI
+          SMUL (RODRIGO PRADO)
+          STEPHANY ALVES
+          CARLOS HENRIQUE
+
+          VIDEOS
+          DOCUMENTÁRIO: SÃO CAETANO DO SUL O PRÍNCIPE DOS NOVOS MUNICÍPIOS – 1950
+          ACERVO ATÍLIO SANTARELLI
+
+          TRILHA
+          ANDRÉ TELES
+
+          ACERVO DE IMAGENS
+          FUNDAÇÃO PRÓ-MEMÓRIA DE SÃO CAETANO DO SUL.
+
+          AGRADECIMENTOS
+          AOS EDUCADORES, FUNCIONÁRIOS E COMUNIDADE ESCOLAR DA EJA EME PROF. VICENTE BASTOS.
+          À DIREÇÃO, FORMADORES E FUNCIONÁRIOS DO CECAPE - CENTRO DE CAPACITAÇÃO DE PROFISSIONAIS DA EDUCAÇÃO DRA. ZILDA ARNS.
+          AOS PESQUISADORES DA FUNDAÇÃO PRÓ-MEMÓRIA DE SÃO CAETANO DO SUL PELO APOIO À PESQUISA.
+          À COMUNIDADE DO SAMBA SOMOS NÓS, DA RUA SILVIA.
+          À COMUNIDADE DA CAPOEIRA GINGA DE OURO.
+          À KELLY CECÍLIA TEIXEIRA, HELENA SEGNINI, DÉBORA SILVA CARVALHO E A EQUIPE DO SESC SÃO CAETANO.
+          AOS ENTREVISTADOS QUE GENTILMENTE COMPARTILHARAM SEUS SABERES.
+        </pre>
+      </div>
+      <div class="apoio">
+        Apoio à Pesquisa
+        <img src="img/promemoria.png" style="width: 15vw">
+        <img src="img/cecape.png" style="width: 5vw">
+      </div>
+      <div class="realizacao">
+        Realização
+        <img src="img/vb.png" style="width: 8vw">
+        <img src="img/xilo.png" style="width: 5vw">
+        <img src="img/sesc.png" style="width: 8vw">
+      </div>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+</html>
