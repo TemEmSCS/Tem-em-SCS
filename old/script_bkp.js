@@ -68,72 +68,38 @@ $(document).ready(function() {
     return mapaDeNavegacao[personagem];
   };
 
-  //cria Players
-  function newPlayers(personagem) {
-    activePlayer = 0;
-    let preld = preload(personagem)
-    let vidOrder = [personagem.video, preld[0], preld[1], preld[2]];
-    for(var i = 0; i < 4;i++) {
-      curPlayer[i] = createPlayer(i, vidOrder[i]);
-    }
-  }
-
-  function createPlayer(playerInfo, curVideo) {
-    return new YT.Player('player' + playerInfo, {
-      videoId: curVideo,
-      playerVars: {rel: 0, showinfo: 0, controls:0, fs: 0, iv_load_policy: 3, modestbranding: 1},
-      events: {
-        'onReady': onPlayerReady,
-        'onStateChange': onPlayerStateChange
-      }
-    });
-  }
-
-  // 4. The API will call this function when the video player is ready.
-  function onPlayerReady(event) {
-    curPlayer[activePlayer].playVideo();
-  }
-
-  // 5. The API calls this function when the player's state changes.
-  //    The function indicates that when playing a video (state=1),
-  //    the player should play for six seconds and then stop.
-  var done = false;
-  function onPlayerStateChange(event) {
-    switch (event.data) {
-      case YT.PlayerState.PLAYING:
-          $(".perguntas").removeClass("show");
-          break;
-      case YT.PlayerState.PAUSED:
-      case YT.PlayerState.ENDED:
-          $(".perguntas").addClass("show");
-          break;
-    }
-  }
-
-  //preload de videos e troca de links
-
-  function preload(personagem){
-    let preld = [];
-
-    for(i=0;i<3;i++){
-      /* altera botões de pergunta*/
-      $("#p" + (i+1) + " a").attr('href', "#" + personagem.pergunta[i]);
-      $("#p" + (i+1) + " a").html(mapaDeNavegacao[personagem.pergunta[i]].name);
-      preld.push(mapaDeNavegacao[personagem.pergunta[i]].video);
-    }
-    return preld;
-  }
-
   //atualiza página pelo hash
   function mudaPagina(info) {
 
     if (buscaPersonagem(info)) { //Se retornar um objeto
-      let personagem = buscaPersonagem(info)
+      var personagem = buscaPersonagem(info)
+      var preld = [];
 
-      preload(personagem);
+      for(i=0;i<3;i++){
+        /* altera botões de pergunta*/
+        $("#p" + (i+1) + " a").attr('href', "#" + personagem.pergunta[i]);
+        $("#p" + (i+1) + " a").html(mapaDeNavegacao[personagem.pergunta[i]].name);
+        preld.push(mapaDeNavegacao[personagem.pergunta[i]].video);
+      }
+
       if ($('.player').is("div")){ // Cria players pela primeira vez
-        window.onYouTubeIframeAPIReady = function(){
-          newPlayers(personagem);
+        window.onYouTubeIframeAPIReady = function() {
+          activePlayer = 0;
+          var vidOrder = [personagem.video, preld[0], preld[1], preld[2]];
+          for(var i = 0; i < 4;i++) {
+            curPlayer[i] = createPlayer(i, vidOrder[i]);
+          }
+        }
+
+        function createPlayer(playerInfo, curVideo) {
+          return new YT.Player('player' + playerInfo, {
+            videoId: curVideo,
+            playerVars: {rel: 0, showinfo: 0, controls:0, fs: 0, iv_load_policy: 3, modestbranding: 1},
+            events: {
+              'onReady': onPlayerReady,
+              'onStateChange': onPlayerStateChange
+            }
+          });
         }
       } else { // depois dos players criados
         let mainpl = 'erro';
@@ -152,6 +118,27 @@ $(document).ready(function() {
         curPlayer[activePlayer].playVideo() //play novo video
         videoPreload(preld, activePlayer)//Add proximo preload
         console.log(preld + "    "  + activePlayer);
+      }
+
+      // 4. The API will call this function when the video player is ready.
+      function onPlayerReady(event) {
+        curPlayer[activePlayer].playVideo();
+      }
+
+      // 5. The API calls this function when the player's state changes.
+      //    The function indicates that when playing a video (state=1),
+      //    the player should play for six seconds and then stop.
+      var done = false;
+      function onPlayerStateChange(event) {
+        switch (event.data) {
+          case YT.PlayerState.PLAYING:
+              $(".perguntas").removeClass("show");
+              break;
+          case YT.PlayerState.PAUSED:
+          case YT.PlayerState.ENDED:
+              $(".perguntas").addClass("show");
+              break;
+        }
       }
     } else {
       console.log("deu ruim");
@@ -180,10 +167,6 @@ $(document).ready(function() {
 
   $(window).on('hashchange',function(){
     mudaPagina(window.location.hash.substring(1));
-  });
-
-  $('.abertura').on('click', function(){
-    newPlayers(buscaPersonagem($(this).attr('id').substring(1)));
   });
 
 });
