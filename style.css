@@ -105,6 +105,23 @@ main span {
   top: 50%;
 }
 
+.faixa {
+  position: absolute;
+  top: 30vh;
+  right: 30vw;
+  width: 100vw;
+  height: 20vh;
+  transform: rotate(-45deg);
+  text-align: center;
+  font-size: 8vh;
+  font-family: 'Roboto Mono', monospace;
+  color: #fff;
+  background-color: rgba(0,0,0,0.75);
+  margin: 5vh 0;
+  z-index: 999;
+  line-height: 20vh;
+}
+
 /* videos */
 
 section {
