@@ -263,18 +263,16 @@ footer {
   z-index: 80;
   width: 100vw;
   height: 100vh;
-  padding: 5vw;
+  padding: 3vh 3vw;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 4fr 1fr;
+  grid-template-rows: 6fr 1fr;
   background-color: rgba(255, 92, 51, 0.6);
-  transition: all 3s easy-in-out;
+  transition: all 3s;
   overflow: hidden;
 }
 
-.creditos {
-  grid-column-start: 1;
-  grid-column-end: 3;
+.sobre, .creditos {
   margin-bottom: 5vh;
   overflow: scroll;
 }

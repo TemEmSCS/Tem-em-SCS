@@ -1,0 +1,1663 @@
+{
+ "kind": "youtube#searchListResponse",
+ "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/Lamemd_4r0D-fKCWicvoSztbBCM\"",
+ "nextPageToken": "CGQQAA",
+ "prevPageToken": "CDIQAQ",
+ "regionCode": "BR",
+ "pageInfo": {
+  "totalResults": 288,
+  "resultsPerPage": 50
+ },
+ "items": [
+  {
+   "kind": "youtube#searchResult",
+   "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/ev0B9DUN8UuWFmAz4X2rfjBCPY4\"",
+   "id": {
+    "kind": "youtube#video",
+    "videoId": "3lGKzjmMn4c"
+   },
+   "snippet": {
+    "publishedAt": "2018-06-26T00:21:38.000Z",
+    "channelId": "UCKNgM8kCUcas5qB2zoEUHKg",
+    "title": "Cinzento9",
+    "description": "",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/3lGKzjmMn4c/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/3lGKzjmMn4c/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/3lGKzjmMn4c/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "Tem em São Caetano",
+    "liveBroadcastContent": "none"
+   }
+  },
+  {
+   "kind": "youtube#searchResult",
+   "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/PUupVWFn8fH3CP1mWmtw8p9q_74\"",
+   "id": {
+    "kind": "youtube#video",
+    "videoId": "4EcUJUVbOio"
+   },
+   "snippet": {
+    "publishedAt": "2018-06-26T00:21:38.000Z",
+    "channelId": "UCKNgM8kCUcas5qB2zoEUHKg",
+    "title": "Cinzento2",
+    "description": "",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/4EcUJUVbOio/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/4EcUJUVbOio/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/4EcUJUVbOio/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "Tem em São Caetano",
+    "liveBroadcastContent": "none"
+   }
+  },
+  {
+   "kind": "youtube#searchResult",
+   "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/2ZC6YRUhboypRdz1xNoA_CNRijo\"",
+   "id": {
+    "kind": "youtube#video",
+    "videoId": "iZQiMC4b6hw"
+   },
+   "snippet": {
+    "publishedAt": "2018-06-26T00:21:38.000Z",
+    "channelId": "UCKNgM8kCUcas5qB2zoEUHKg",
+    "title": "Cinzento15",
+    "description": "",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/iZQiMC4b6hw/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/iZQiMC4b6hw/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/iZQiMC4b6hw/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "Tem em São Caetano",
+    "liveBroadcastContent": "none"
+   }
+  },
+  {
+   "kind": "youtube#searchResult",
+   "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/34Z6uOJTJ9DEUbCZibH_f1C872E\"",
+   "id": {
+    "kind": "youtube#video",
+    "videoId": "1wSO6gAjhdI"
+   },
+   "snippet": {
+    "publishedAt": "2018-06-26T00:21:38.000Z",
+    "channelId": "UCKNgM8kCUcas5qB2zoEUHKg",
+    "title": "Cinzento14",
+    "description": "",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/1wSO6gAjhdI/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/1wSO6gAjhdI/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/1wSO6gAjhdI/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "Tem em São Caetano",
+    "liveBroadcastContent": "none"
+   }
+  },
+  {
+   "kind": "youtube#searchResult",
+   "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/HxXSeQ_SyM3K0xE9rlKX7F1IaPI\"",
+   "id": {
+    "kind": "youtube#video",
+    "videoId": "PXaE5sOamW4"
+   },
+   "snippet": {
+    "publishedAt": "2018-06-26T00:21:38.000Z",
+    "channelId": "UCKNgM8kCUcas5qB2zoEUHKg",
+    "title": "Cinzento6",
+    "description": "",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/PXaE5sOamW4/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/PXaE5sOamW4/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/PXaE5sOamW4/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "Tem em São Caetano",
+    "liveBroadcastContent": "none"
+   }
+  },
+  {
+   "kind": "youtube#searchResult",
+   "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/StsYb36DNZrjsAGvy6kqeADvGNM\"",
+   "id": {
+    "kind": "youtube#video",
+    "videoId": "_A9qsBd3czk"
+   },
+   "snippet": {
+    "publishedAt": "2018-06-26T00:21:38.000Z",
+    "channelId": "UCKNgM8kCUcas5qB2zoEUHKg",
+    "title": "Cinzento11",
+    "description": "",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/_A9qsBd3czk/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/_A9qsBd3czk/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/_A9qsBd3czk/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "Tem em São Caetano",
+    "liveBroadcastContent": "none"
+   }
+  },
+  {
+   "kind": "youtube#searchResult",
+   "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/p7Qopzre9Tg9wldIPjbAmQ5tX9I\"",
+   "id": {
+    "kind": "youtube#video",
+    "videoId": "SySkueyAXHk"
+   },
+   "snippet": {
+    "publishedAt": "2018-06-26T00:18:57.000Z",
+    "channelId": "UCKNgM8kCUcas5qB2zoEUHKg",
+    "title": "David8",
+    "description": "",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/SySkueyAXHk/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/SySkueyAXHk/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/SySkueyAXHk/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "Tem em São Caetano",
+    "liveBroadcastContent": "none"
+   }
+  },
+  {
+   "kind": "youtube#searchResult",
+   "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/2zYHnAYz0ifP6aBOzCtHZuuskpo\"",
+   "id": {
+    "kind": "youtube#video",
+    "videoId": "nOONW90WZkI"
+   },
+   "snippet": {
+    "publishedAt": "2018-06-26T00:18:57.000Z",
+    "channelId": "UCKNgM8kCUcas5qB2zoEUHKg",
+    "title": "Cristina35",
+    "description": "",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/nOONW90WZkI/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/nOONW90WZkI/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/nOONW90WZkI/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "Tem em São Caetano",
+    "liveBroadcastContent": "none"
+   }
+  },
+  {
+   "kind": "youtube#searchResult",
+   "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/iCyJldA7IhGs_L1c0QDC7yu7EDU\"",
+   "id": {
+    "kind": "youtube#video",
+    "videoId": "idGRyPT8-9g"
+   },
+   "snippet": {
+    "publishedAt": "2018-06-26T00:18:57.000Z",
+    "channelId": "UCKNgM8kCUcas5qB2zoEUHKg",
+    "title": "Cristina36",
+    "description": "",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/idGRyPT8-9g/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/idGRyPT8-9g/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/idGRyPT8-9g/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "Tem em São Caetano",
+    "liveBroadcastContent": "none"
+   }
+  },
+  {
+   "kind": "youtube#searchResult",
+   "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/Lxweydg_ns2Ds3OePqKYGnwtNsU\"",
+   "id": {
+    "kind": "youtube#video",
+    "videoId": "DYrwkJXg_5U"
+   },
+   "snippet": {
+    "publishedAt": "2018-06-26T00:18:58.000Z",
+    "channelId": "UCKNgM8kCUcas5qB2zoEUHKg",
+    "title": "Cristina25",
+    "description": "",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/DYrwkJXg_5U/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/DYrwkJXg_5U/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/DYrwkJXg_5U/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "Tem em São Caetano",
+    "liveBroadcastContent": "none"
+   }
+  },
+  {
+   "kind": "youtube#searchResult",
+   "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/iHnOFExY9g-ye-lBt5mp9va4yPM\"",
+   "id": {
+    "kind": "youtube#video",
+    "videoId": "HRUsoWrc5RY"
+   },
+   "snippet": {
+    "publishedAt": "2018-06-26T00:18:57.000Z",
+    "channelId": "UCKNgM8kCUcas5qB2zoEUHKg",
+    "title": "Cristina41",
+    "description": "",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/HRUsoWrc5RY/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/HRUsoWrc5RY/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/HRUsoWrc5RY/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "Tem em São Caetano",
+    "liveBroadcastContent": "none"
+   }
+  },
+  {
+   "kind": "youtube#searchResult",
+   "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/9M1UhzytJx49xJwfTjwUt7Z_EOM\"",
+   "id": {
+    "kind": "youtube#video",
+    "videoId": "YeLiZkhpRTo"
+   },
+   "snippet": {
+    "publishedAt": "2018-06-26T00:18:57.000Z",
+    "channelId": "UCKNgM8kCUcas5qB2zoEUHKg",
+    "title": "Cristina31",
+    "description": "",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/YeLiZkhpRTo/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/YeLiZkhpRTo/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/YeLiZkhpRTo/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "Tem em São Caetano",
+    "liveBroadcastContent": "none"
+   }
+  },
+  {
+   "kind": "youtube#searchResult",
+   "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/BzzO0fpW5Jwp1I8n-kKQOCtcfF4\"",
+   "id": {
+    "kind": "youtube#video",
+    "videoId": "OjNVNLGH2kU"
+   },
+   "snippet": {
+    "publishedAt": "2018-06-26T00:18:57.000Z",
+    "channelId": "UCKNgM8kCUcas5qB2zoEUHKg",
+    "title": "David10",
+    "description": "",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/OjNVNLGH2kU/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/OjNVNLGH2kU/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/OjNVNLGH2kU/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "Tem em São Caetano",
+    "liveBroadcastContent": "none"
+   }
+  },
+  {
+   "kind": "youtube#searchResult",
+   "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/TuProaJUUPb0i6Kv9ojDgNbq9ME\"",
+   "id": {
+    "kind": "youtube#video",
+    "videoId": "tVhXthms-qg"
+   },
+   "snippet": {
+    "publishedAt": "2018-06-26T00:18:57.000Z",
+    "channelId": "UCKNgM8kCUcas5qB2zoEUHKg",
+    "title": "Cristina23",
+    "description": "",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/tVhXthms-qg/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/tVhXthms-qg/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/tVhXthms-qg/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "Tem em São Caetano",
+    "liveBroadcastContent": "none"
+   }
+  },
+  {
+   "kind": "youtube#searchResult",
+   "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/0UgXq5Pw1KWURJc7M05mQ_lpeUs\"",
+   "id": {
+    "kind": "youtube#video",
+    "videoId": "PvhpeFVM0vU"
+   },
+   "snippet": {
+    "publishedAt": "2018-06-26T00:18:57.000Z",
+    "channelId": "UCKNgM8kCUcas5qB2zoEUHKg",
+    "title": "Cristina27",
+    "description": "",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/PvhpeFVM0vU/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/PvhpeFVM0vU/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/PvhpeFVM0vU/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "Tem em São Caetano",
+    "liveBroadcastContent": "none"
+   }
+  },
+  {
+   "kind": "youtube#searchResult",
+   "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/Dmmp3fkJaLUIZGq800hEgLkU4KM\"",
+   "id": {
+    "kind": "youtube#video",
+    "videoId": "2XhahUc0Xe4"
+   },
+   "snippet": {
+    "publishedAt": "2018-06-26T00:18:57.000Z",
+    "channelId": "UCKNgM8kCUcas5qB2zoEUHKg",
+    "title": "David3",
+    "description": "",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/2XhahUc0Xe4/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/2XhahUc0Xe4/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/2XhahUc0Xe4/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "Tem em São Caetano",
+    "liveBroadcastContent": "none"
+   }
+  },
+  {
+   "kind": "youtube#searchResult",
+   "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/1fp7jkFCBuUDNWADYXjtXVa5sgY\"",
+   "id": {
+    "kind": "youtube#video",
+    "videoId": "HFwIfF_WDAM"
+   },
+   "snippet": {
+    "publishedAt": "2018-06-26T00:18:57.000Z",
+    "channelId": "UCKNgM8kCUcas5qB2zoEUHKg",
+    "title": "Cristina37",
+    "description": "",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/HFwIfF_WDAM/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/HFwIfF_WDAM/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/HFwIfF_WDAM/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "Tem em São Caetano",
+    "liveBroadcastContent": "none"
+   }
+  },
+  {
+   "kind": "youtube#searchResult",
+   "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/aSN90oJjdFS8ZspVEsFraqWMrfk\"",
+   "id": {
+    "kind": "youtube#video",
+    "videoId": "FPnQJdjSQeE"
+   },
+   "snippet": {
+    "publishedAt": "2018-06-26T00:18:58.000Z",
+    "channelId": "UCKNgM8kCUcas5qB2zoEUHKg",
+    "title": "David7",
+    "description": "",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/FPnQJdjSQeE/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/FPnQJdjSQeE/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/FPnQJdjSQeE/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "Tem em São Caetano",
+    "liveBroadcastContent": "none"
+   }
+  },
+  {
+   "kind": "youtube#searchResult",
+   "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/PSmpos8PqC9LlgxSHbhzky-yqcw\"",
+   "id": {
+    "kind": "youtube#video",
+    "videoId": "9PFrQ2X66bM"
+   },
+   "snippet": {
+    "publishedAt": "2018-06-26T00:18:57.000Z",
+    "channelId": "UCKNgM8kCUcas5qB2zoEUHKg",
+    "title": "Cristina33",
+    "description": "",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/9PFrQ2X66bM/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/9PFrQ2X66bM/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/9PFrQ2X66bM/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "Tem em São Caetano",
+    "liveBroadcastContent": "none"
+   }
+  },
+  {
+   "kind": "youtube#searchResult",
+   "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/86s0z4JUQsA2wtcq_66xq47fbXU\"",
+   "id": {
+    "kind": "youtube#video",
+    "videoId": "25gFD34-H1I"
+   },
+   "snippet": {
+    "publishedAt": "2018-06-26T00:18:57.000Z",
+    "channelId": "UCKNgM8kCUcas5qB2zoEUHKg",
+    "title": "David9",
+    "description": "",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/25gFD34-H1I/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/25gFD34-H1I/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/25gFD34-H1I/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "Tem em São Caetano",
+    "liveBroadcastContent": "none"
+   }
+  },
+  {
+   "kind": "youtube#searchResult",
+   "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/UGBuRLyGJnlFAwdrYGWzPTG13VI\"",
+   "id": {
+    "kind": "youtube#video",
+    "videoId": "lbSwyIc6Q1I"
+   },
+   "snippet": {
+    "publishedAt": "2018-06-26T00:18:57.000Z",
+    "channelId": "UCKNgM8kCUcas5qB2zoEUHKg",
+    "title": "David1",
+    "description": "",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/lbSwyIc6Q1I/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/lbSwyIc6Q1I/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/lbSwyIc6Q1I/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "Tem em São Caetano",
+    "liveBroadcastContent": "none"
+   }
+  },
+  {
+   "kind": "youtube#searchResult",
+   "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/H-rhTgB6UmpHF7EVjiu0xl8S4BU\"",
+   "id": {
+    "kind": "youtube#video",
+    "videoId": "H9mFIa0c5lQ"
+   },
+   "snippet": {
+    "publishedAt": "2018-06-26T00:18:58.000Z",
+    "channelId": "UCKNgM8kCUcas5qB2zoEUHKg",
+    "title": "Cristina26",
+    "description": "",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/H9mFIa0c5lQ/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/H9mFIa0c5lQ/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/H9mFIa0c5lQ/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "Tem em São Caetano",
+    "liveBroadcastContent": "none"
+   }
+  },
+  {
+   "kind": "youtube#searchResult",
+   "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/Qft-UaGEguQXgLlkoUC8PCIuI_Y\"",
+   "id": {
+    "kind": "youtube#video",
+    "videoId": "bg5OXTxLmAQ"
+   },
+   "snippet": {
+    "publishedAt": "2018-06-26T00:18:57.000Z",
+    "channelId": "UCKNgM8kCUcas5qB2zoEUHKg",
+    "title": "Cristina42",
+    "description": "",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/bg5OXTxLmAQ/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/bg5OXTxLmAQ/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/bg5OXTxLmAQ/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "Tem em São Caetano",
+    "liveBroadcastContent": "none"
+   }
+  },
+  {
+   "kind": "youtube#searchResult",
+   "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/LVAzSSWrLycLHYz7Wm_1-cYVNf4\"",
+   "id": {
+    "kind": "youtube#video",
+    "videoId": "6M-5CQPD61E"
+   },
+   "snippet": {
+    "publishedAt": "2018-06-26T00:18:57.000Z",
+    "channelId": "UCKNgM8kCUcas5qB2zoEUHKg",
+    "title": "Cristina38",
+    "description": "",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/6M-5CQPD61E/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/6M-5CQPD61E/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/6M-5CQPD61E/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "Tem em São Caetano",
+    "liveBroadcastContent": "none"
+   }
+  },
+  {
+   "kind": "youtube#searchResult",
+   "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/4Tf-2JD6EwDOis4yM12qNHy3P4k\"",
+   "id": {
+    "kind": "youtube#video",
+    "videoId": "gsQRPW8P8hA"
+   },
+   "snippet": {
+    "publishedAt": "2018-06-26T00:18:57.000Z",
+    "channelId": "UCKNgM8kCUcas5qB2zoEUHKg",
+    "title": "David6",
+    "description": "",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/gsQRPW8P8hA/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/gsQRPW8P8hA/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/gsQRPW8P8hA/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "Tem em São Caetano",
+    "liveBroadcastContent": "none"
+   }
+  },
+  {
+   "kind": "youtube#searchResult",
+   "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/IO1iRTY5e8uXPBYc8jlfIwlOvlY\"",
+   "id": {
+    "kind": "youtube#video",
+    "videoId": "lhOsfeSrJD8"
+   },
+   "snippet": {
+    "publishedAt": "2018-06-26T00:18:57.000Z",
+    "channelId": "UCKNgM8kCUcas5qB2zoEUHKg",
+    "title": "Cristina40",
+    "description": "",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/lhOsfeSrJD8/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/lhOsfeSrJD8/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/lhOsfeSrJD8/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "Tem em São Caetano",
+    "liveBroadcastContent": "none"
+   }
+  },
+  {
+   "kind": "youtube#searchResult",
+   "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/iXTQIdBYzrcVrhLINiKu-YqVtjI\"",
+   "id": {
+    "kind": "youtube#video",
+    "videoId": "MXmGkjwUPto"
+   },
+   "snippet": {
+    "publishedAt": "2018-06-26T00:18:57.000Z",
+    "channelId": "UCKNgM8kCUcas5qB2zoEUHKg",
+    "title": "Cristina28",
+    "description": "",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/MXmGkjwUPto/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/MXmGkjwUPto/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/MXmGkjwUPto/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "Tem em São Caetano",
+    "liveBroadcastContent": "none"
+   }
+  },
+  {
+   "kind": "youtube#searchResult",
+   "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/TjdIFmO_Pv4Xp95t3YVUaB5Cl1A\"",
+   "id": {
+    "kind": "youtube#video",
+    "videoId": "zX2jSrgjL4I"
+   },
+   "snippet": {
+    "publishedAt": "2018-06-26T00:18:57.000Z",
+    "channelId": "UCKNgM8kCUcas5qB2zoEUHKg",
+    "title": "Cristina34",
+    "description": "",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/zX2jSrgjL4I/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/zX2jSrgjL4I/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/zX2jSrgjL4I/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "Tem em São Caetano",
+    "liveBroadcastContent": "none"
+   }
+  },
+  {
+   "kind": "youtube#searchResult",
+   "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/rLgc5r6OWq7yEozg82bkHEwTxNU\"",
+   "id": {
+    "kind": "youtube#video",
+    "videoId": "gt86DroMsS4"
+   },
+   "snippet": {
+    "publishedAt": "2018-06-26T00:18:57.000Z",
+    "channelId": "UCKNgM8kCUcas5qB2zoEUHKg",
+    "title": "David5",
+    "description": "",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/gt86DroMsS4/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/gt86DroMsS4/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/gt86DroMsS4/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "Tem em São Caetano",
+    "liveBroadcastContent": "none"
+   }
+  },
+  {
+   "kind": "youtube#searchResult",
+   "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/Xwq3U70u3ja1u0p7ezeVDJD74WM\"",
+   "id": {
+    "kind": "youtube#video",
+    "videoId": "hZcI_cVbBUQ"
+   },
+   "snippet": {
+    "publishedAt": "2018-06-26T00:18:57.000Z",
+    "channelId": "UCKNgM8kCUcas5qB2zoEUHKg",
+    "title": "Cristina39",
+    "description": "",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/hZcI_cVbBUQ/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/hZcI_cVbBUQ/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/hZcI_cVbBUQ/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "Tem em São Caetano",
+    "liveBroadcastContent": "none"
+   }
+  },
+  {
+   "kind": "youtube#searchResult",
+   "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/7-1h6LJ6ctPygubaUHLw7ieJeJA\"",
+   "id": {
+    "kind": "youtube#video",
+    "videoId": "YHQhz0ODkgk"
+   },
+   "snippet": {
+    "publishedAt": "2018-06-26T00:18:57.000Z",
+    "channelId": "UCKNgM8kCUcas5qB2zoEUHKg",
+    "title": "David2",
+    "description": "",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/YHQhz0ODkgk/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/YHQhz0ODkgk/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/YHQhz0ODkgk/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "Tem em São Caetano",
+    "liveBroadcastContent": "none"
+   }
+  },
+  {
+   "kind": "youtube#searchResult",
+   "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/yD2qDMaQPLGnHfUC9RKMbNwxRss\"",
+   "id": {
+    "kind": "youtube#video",
+    "videoId": "LmSYbGiNXtY"
+   },
+   "snippet": {
+    "publishedAt": "2018-06-26T00:18:57.000Z",
+    "channelId": "UCKNgM8kCUcas5qB2zoEUHKg",
+    "title": "David4",
+    "description": "",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/LmSYbGiNXtY/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/LmSYbGiNXtY/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/LmSYbGiNXtY/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "Tem em São Caetano",
+    "liveBroadcastContent": "none"
+   }
+  },
+  {
+   "kind": "youtube#searchResult",
+   "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/KGrDgwiozpT_zKbtpEJoJ5QvFkQ\"",
+   "id": {
+    "kind": "youtube#video",
+    "videoId": "D2UgZfHODu0"
+   },
+   "snippet": {
+    "publishedAt": "2018-06-26T00:18:56.000Z",
+    "channelId": "UCKNgM8kCUcas5qB2zoEUHKg",
+    "title": "Cristina32",
+    "description": "",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/D2UgZfHODu0/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/D2UgZfHODu0/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/D2UgZfHODu0/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "Tem em São Caetano",
+    "liveBroadcastContent": "none"
+   }
+  },
+  {
+   "kind": "youtube#searchResult",
+   "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/xH9CyDtOTU3LpGu8MiUnboPQjtk\"",
+   "id": {
+    "kind": "youtube#video",
+    "videoId": "_nqe-xUhqlQ"
+   },
+   "snippet": {
+    "publishedAt": "2018-06-26T00:18:57.000Z",
+    "channelId": "UCKNgM8kCUcas5qB2zoEUHKg",
+    "title": "Cristina24",
+    "description": "",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/_nqe-xUhqlQ/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/_nqe-xUhqlQ/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/_nqe-xUhqlQ/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "Tem em São Caetano",
+    "liveBroadcastContent": "none"
+   }
+  },
+  {
+   "kind": "youtube#searchResult",
+   "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/GabUdiBpjZVKEixXoRzEhUXXGjU\"",
+   "id": {
+    "kind": "youtube#video",
+    "videoId": "romJ5kqljNA"
+   },
+   "snippet": {
+    "publishedAt": "2018-06-26T00:12:54.000Z",
+    "channelId": "UCKNgM8kCUcas5qB2zoEUHKg",
+    "title": "Diolino7",
+    "description": "",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/romJ5kqljNA/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/romJ5kqljNA/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/romJ5kqljNA/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "Tem em São Caetano",
+    "liveBroadcastContent": "none"
+   }
+  },
+  {
+   "kind": "youtube#searchResult",
+   "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/aYPu1l6GcOx2s3CsaGKlBroica4\"",
+   "id": {
+    "kind": "youtube#video",
+    "videoId": "QrksyESDCmA"
+   },
+   "snippet": {
+    "publishedAt": "2018-06-26T00:12:54.000Z",
+    "channelId": "UCKNgM8kCUcas5qB2zoEUHKg",
+    "title": "Diolino16",
+    "description": "",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/QrksyESDCmA/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/QrksyESDCmA/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/QrksyESDCmA/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "Tem em São Caetano",
+    "liveBroadcastContent": "none"
+   }
+  },
+  {
+   "kind": "youtube#searchResult",
+   "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/XZx6z_vqf_uxp43Uu2igLulnfVQ\"",
+   "id": {
+    "kind": "youtube#video",
+    "videoId": "xFErVb2e8WY"
+   },
+   "snippet": {
+    "publishedAt": "2018-06-26T00:12:54.000Z",
+    "channelId": "UCKNgM8kCUcas5qB2zoEUHKg",
+    "title": "Diolino17",
+    "description": "",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/xFErVb2e8WY/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/xFErVb2e8WY/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/xFErVb2e8WY/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "Tem em São Caetano",
+    "liveBroadcastContent": "none"
+   }
+  },
+  {
+   "kind": "youtube#searchResult",
+   "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/VPNp5CSVo4v1RCP3UvP86HEBHhE\"",
+   "id": {
+    "kind": "youtube#video",
+    "videoId": "q7__Z0CBX3c"
+   },
+   "snippet": {
+    "publishedAt": "2018-06-26T00:12:54.000Z",
+    "channelId": "UCKNgM8kCUcas5qB2zoEUHKg",
+    "title": "Diolino10",
+    "description": "",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/q7__Z0CBX3c/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/q7__Z0CBX3c/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/q7__Z0CBX3c/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "Tem em São Caetano",
+    "liveBroadcastContent": "none"
+   }
+  },
+  {
+   "kind": "youtube#searchResult",
+   "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/oOofNf086K6d_NDgQu62qpWVmWk\"",
+   "id": {
+    "kind": "youtube#video",
+    "videoId": "QyccDr_ohUE"
+   },
+   "snippet": {
+    "publishedAt": "2018-06-26T00:12:54.000Z",
+    "channelId": "UCKNgM8kCUcas5qB2zoEUHKg",
+    "title": "Diolino5",
+    "description": "",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/QyccDr_ohUE/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/QyccDr_ohUE/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/QyccDr_ohUE/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "Tem em São Caetano",
+    "liveBroadcastContent": "none"
+   }
+  },
+  {
+   "kind": "youtube#searchResult",
+   "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/Twinf82uzbH5U803VTIPb9klgd0\"",
+   "id": {
+    "kind": "youtube#video",
+    "videoId": "WSthLetM9ug"
+   },
+   "snippet": {
+    "publishedAt": "2018-06-26T00:12:54.000Z",
+    "channelId": "UCKNgM8kCUcas5qB2zoEUHKg",
+    "title": "Diolino14",
+    "description": "",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/WSthLetM9ug/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/WSthLetM9ug/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/WSthLetM9ug/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "Tem em São Caetano",
+    "liveBroadcastContent": "none"
+   }
+  },
+  {
+   "kind": "youtube#searchResult",
+   "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/IO5s6CD6u09W1zWiX65wnnBXmvM\"",
+   "id": {
+    "kind": "youtube#video",
+    "videoId": "S_aodABI058"
+   },
+   "snippet": {
+    "publishedAt": "2018-06-26T00:12:54.000Z",
+    "channelId": "UCKNgM8kCUcas5qB2zoEUHKg",
+    "title": "Avaliacao3",
+    "description": "",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/S_aodABI058/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/S_aodABI058/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/S_aodABI058/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "Tem em São Caetano",
+    "liveBroadcastContent": "none"
+   }
+  },
+  {
+   "kind": "youtube#searchResult",
+   "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/ZON8ZwX9BQIsvSutus3QWXmvlRU\"",
+   "id": {
+    "kind": "youtube#video",
+    "videoId": "rqYSb4BUIGo"
+   },
+   "snippet": {
+    "publishedAt": "2018-06-26T00:12:55.000Z",
+    "channelId": "UCKNgM8kCUcas5qB2zoEUHKg",
+    "title": "Diolino15",
+    "description": "",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/rqYSb4BUIGo/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/rqYSb4BUIGo/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/rqYSb4BUIGo/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "Tem em São Caetano",
+    "liveBroadcastContent": "none"
+   }
+  },
+  {
+   "kind": "youtube#searchResult",
+   "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/LTcqyuMXzvZYxUvSRorXtsFrSIY\"",
+   "id": {
+    "kind": "youtube#video",
+    "videoId": "pwwjIpf9jns"
+   },
+   "snippet": {
+    "publishedAt": "2018-06-26T00:12:54.000Z",
+    "channelId": "UCKNgM8kCUcas5qB2zoEUHKg",
+    "title": "Diolino11",
+    "description": "",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/pwwjIpf9jns/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/pwwjIpf9jns/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/pwwjIpf9jns/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "Tem em São Caetano",
+    "liveBroadcastContent": "none"
+   }
+  },
+  {
+   "kind": "youtube#searchResult",
+   "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/VmZGleEhSl6Xo98vPggM_xYGCWM\"",
+   "id": {
+    "kind": "youtube#video",
+    "videoId": "qrdPMrjWOZI"
+   },
+   "snippet": {
+    "publishedAt": "2018-06-26T00:12:54.000Z",
+    "channelId": "UCKNgM8kCUcas5qB2zoEUHKg",
+    "title": "Diolino12",
+    "description": "",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/qrdPMrjWOZI/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/qrdPMrjWOZI/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/qrdPMrjWOZI/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "Tem em São Caetano",
+    "liveBroadcastContent": "none"
+   }
+  },
+  {
+   "kind": "youtube#searchResult",
+   "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/-P43W3QCfxmEACv0OUuHYs2b8No\"",
+   "id": {
+    "kind": "youtube#video",
+    "videoId": "j1vZYKoDvKg"
+   },
+   "snippet": {
+    "publishedAt": "2018-06-26T00:12:54.000Z",
+    "channelId": "UCKNgM8kCUcas5qB2zoEUHKg",
+    "title": "Avaliacao1",
+    "description": "",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/j1vZYKoDvKg/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/j1vZYKoDvKg/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/j1vZYKoDvKg/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "Tem em São Caetano",
+    "liveBroadcastContent": "none"
+   }
+  },
+  {
+   "kind": "youtube#searchResult",
+   "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/kaI_TNSWz_eSLuH1StMgxUL-w9M\"",
+   "id": {
+    "kind": "youtube#video",
+    "videoId": "04pfMODtX1M"
+   },
+   "snippet": {
+    "publishedAt": "2018-06-26T00:12:54.000Z",
+    "channelId": "UCKNgM8kCUcas5qB2zoEUHKg",
+    "title": "Diolino20",
+    "description": "",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/04pfMODtX1M/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/04pfMODtX1M/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/04pfMODtX1M/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "Tem em São Caetano",
+    "liveBroadcastContent": "none"
+   }
+  },
+  {
+   "kind": "youtube#searchResult",
+   "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/g5MO2yc9775qufo9Z0BJz81WnfY\"",
+   "id": {
+    "kind": "youtube#video",
+    "videoId": "yZniHeqRwB8"
+   },
+   "snippet": {
+    "publishedAt": "2018-06-26T00:12:54.000Z",
+    "channelId": "UCKNgM8kCUcas5qB2zoEUHKg",
+    "title": "Diolino4",
+    "description": "",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/yZniHeqRwB8/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/yZniHeqRwB8/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/yZniHeqRwB8/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "Tem em São Caetano",
+    "liveBroadcastContent": "none"
+   }
+  },
+  {
+   "kind": "youtube#searchResult",
+   "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/iqYyoItn0Y12Po-PZ2Prp6J8TPA\"",
+   "id": {
+    "kind": "youtube#video",
+    "videoId": "Yk7kGLofkMI"
+   },
+   "snippet": {
+    "publishedAt": "2018-06-26T00:12:54.000Z",
+    "channelId": "UCKNgM8kCUcas5qB2zoEUHKg",
+    "title": "David11",
+    "description": "",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/Yk7kGLofkMI/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/Yk7kGLofkMI/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/Yk7kGLofkMI/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "Tem em São Caetano",
+    "liveBroadcastContent": "none"
+   }
+  },
+  {
+   "kind": "youtube#searchResult",
+   "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/fKZr6kXOmdhtL5WhZREXeVQHL_M\"",
+   "id": {
+    "kind": "youtube#video",
+    "videoId": "scAman4qeXo"
+   },
+   "snippet": {
+    "publishedAt": "2018-06-26T00:12:54.000Z",
+    "channelId": "UCKNgM8kCUcas5qB2zoEUHKg",
+    "title": "Diolino1",
+    "description": "",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/scAman4qeXo/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/scAman4qeXo/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/scAman4qeXo/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "Tem em São Caetano",
+    "liveBroadcastContent": "none"
+   }
+  },
+  {
+   "kind": "youtube#searchResult",
+   "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/51Q26-1AcDr2TUH6fLd-cDxQRxs\"",
+   "id": {
+    "kind": "youtube#video",
+    "videoId": "fAacj5rF224"
+   },
+   "snippet": {
+    "publishedAt": "2018-06-26T00:12:55.000Z",
+    "channelId": "UCKNgM8kCUcas5qB2zoEUHKg",
+    "title": "David12",
+    "description": "",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/fAacj5rF224/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/fAacj5rF224/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/fAacj5rF224/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "Tem em São Caetano",
+    "liveBroadcastContent": "none"
+   }
+  }
+ ]
+}

@@ -1,7 +1,6 @@
 // Google API
 
 var tag = document.createElement('script');
-
 tag.src = "https://www.youtube.com/iframe_api";
 var firstScriptTag = document.getElementsByTagName('script')[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
@@ -130,7 +129,7 @@ $(document).ready(function() {
     if (buscaPersonagem(info)) { //Se retornar um objeto
       let personagem = buscaPersonagem(info)
 
-      preload(personagem);
+      let preld = preload(personagem);
       if ($('.player').is("div")){ // Cria players pela primeira vez
         window.onYouTubeIframeAPIReady = function(){
           newPlayers(personagem);
@@ -178,7 +177,7 @@ $(document).ready(function() {
     }
   })
 
-  $(window).on('hashchange',function(){
+  $(window).bind('hashchange',function(){
     mudaPagina(window.location.hash.substring(1));
   });
 
