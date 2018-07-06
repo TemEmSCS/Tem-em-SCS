@@ -1,0 +1,31 @@
+<head>
+    <title>YouTube</title>
+</head>
+
+<body>
+
+    <script>
+        function onGoogleLoad() {
+            gapi.client.setApiKey('AIzaSyDT3WRwQlowiikHrvXzb0g1qMsC54Ztm3M');
+            gapi.client.load('youtube', 'v3', function() {
+
+                var request = gapi.client.youtube.playlistItems.list({
+                    part: 'snippet',
+                    playlistId: 'UCKNgM8kCUcas5qB2zoEUHKg',
+                    maxResults: 50
+                });
+
+                request.execute(function(response) {
+                    for (var i = 0; i < response.items.length; i++) {
+                        console.log(response.items[i].snippet.title + " published at " + response.items[i].snippet.publishedAt)
+                    }
+                });
+            });
+        }
+    </script>
+
+    <script src="https://apis.google.com/js/client.js?onload=onGoogleLoad"></script>
+
+</body>
+
+</html>
