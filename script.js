@@ -42,7 +42,7 @@ $(document).ready(function() {
   $('.dropdown ul').html(function(){
     var menu = '';
     for(i=0;i<12;i++){
-      menu += '<li><a href="#' + i + '">' + mapaDeNavegacao[i].name.replace(/(Tem )|( em São Caetano\?)/g, '') + '</a></li>';
+      menu += '<li><a class="menuTrigger" href="#' + i + '">' + mapaDeNavegacao[i].name.replace(/(Tem )|( em São Caetano\?)/g, '') + '</a></li>';
     }
     return menu;
   });
@@ -75,6 +75,7 @@ $(document).ready(function() {
     for(var i = 0; i < 4;i++) {
       curPlayer[i] = createPlayer(i, vidOrder[i]);
     }
+    $('#tagline').html(personagem.name.replace(/(Tem )|( em São Caetano\?)/g, ''));
   }
 
   function createPlayer(playerInfo, curVideo) {
@@ -146,6 +147,8 @@ $(document).ready(function() {
           $('.main').removeClass('main');
           $('#player'+mainpl).addClass('main');
           activePlayer = mainpl; // trioca div e ajusta novo player ativo
+        } else {
+          curPlayer[activePlayer].loadVideoById(personagem.video);
         }
         //automa menu?
         curPlayer[activePlayer].playVideo() //play novo video
@@ -183,6 +186,10 @@ $(document).ready(function() {
 
   $('.abertura').on('click', function(){
     newPlayers(buscaPersonagem($(this).attr('id').substring(1)));
+  });
+
+  $('.menuTrigger').on('click', function(){
+    $('#tagline').html($(this).html());
   });
 
 });
