@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>Tem em São Caetano?</title>
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="map_2.js"></script>
+  </head>
+  <body>
+    <table>
+      <script>
+      console.log(mapaDeNavegacao.length);
+        for(let i=0; i<mapaDeNavegacao.length; i++){
+          console.log(i);
+          console.log(mapaDeNavegacao[i].pergunta);
+          document.write('<tr><td>' +  mapaDeNavegacao[i].name + '</td><td>' +  mapaDeNavegacao[mapaDeNavegacao[i].pergunta[0]].name + '</td><td>' +   mapaDeNavegacao[mapaDeNavegacao[i].pergunta[1]].name + '</td><td>' +  mapaDeNavegacao[mapaDeNavegacao[i].pergunta[2]].name + '</td></tr>');
+        }
+      </script>
+    </table>
+  </body>
+</html>
