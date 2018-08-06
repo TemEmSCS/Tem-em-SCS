@@ -163,7 +163,7 @@ var mapaDeNavegacao = [
   {name: 'Qual é a melhor Religião matriz africana?', video: 'gbMYlXjtyLo', pergunta: [162, 157, 215]},
   {name: 'Toda religião de matriz africana é igualmente discriminada?', video: 'udDazs1CtmQ', pergunta: [163, 167, 225]},
   {name: 'O que é o Exu?', video: 'v3sdBUfE0Tg', pergunta: [223, 158, 154]},
-  {name: 'Brancos podem cultuar religiões de matriz africana?', video: 'xvZs3UhR89o', pergunta: [165, 151, 248]},
+  {name: 'Brancos podem cultuar religiões de matriz africana?', video: 'JkvF_xa-YGA', pergunta: [165, 151, 248]},
   {name: 'Quem cultua religião de matriz africana também sofre racismo?', video: 'ourWLu2unFs', pergunta: [164, 222, 220]},
   {name: 'O que foi o projeto João de Barro?', video: 'pMrITlHpCo4', pergunta: [278, 91, 152]},
   {name: 'Quem cultua Religião de matriz africana é espírita?', video: 'tLLaafVqJ0Q', pergunta: [159, 157, 223]},
