@@ -11,9 +11,7 @@
       <script>
       console.log(mapaDeNavegacao.length);
         for(let i=0; i<mapaDeNavegacao.length; i++){
-          console.log(i);
-          console.log(mapaDeNavegacao[i].pergunta);
-          document.write('<tr><td>' +  mapaDeNavegacao[i].name + '</td><td>' +  mapaDeNavegacao[mapaDeNavegacao[i].pergunta[0]].name + '</td><td>' +   mapaDeNavegacao[mapaDeNavegacao[i].pergunta[1]].name + '</td><td>' +  mapaDeNavegacao[mapaDeNavegacao[i].pergunta[2]].name + '</td></tr>');
+          document.write('<tr><td>' + i + '</td><td>' +  mapaDeNavegacao[i].name + '</td><td>' +  mapaDeNavegacao[mapaDeNavegacao[i].pergunta[0]].name + '</td><td>' +   mapaDeNavegacao[mapaDeNavegacao[i].pergunta[1]].name + '</td><td>' +  mapaDeNavegacao[mapaDeNavegacao[i].pergunta[2]].name + '</td></tr>');
         }
       </script>
     </table>
