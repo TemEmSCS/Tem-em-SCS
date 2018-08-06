@@ -10,7 +10,7 @@
     <table>
       <script>
         for(let i=0; i<mapaDeNavegacao.length; i++){
-          document.write('<tr><td>' + i + '</td><td>' +  mapaDeNavegacao[i].name + '</td><td>' +  mapaDeNavegacao[mapaDeNavegacao[i].pergunta[0]].name + '</td><td>' +   mapaDeNavegacao[mapaDeNavegacao[i].pergunta[1]].name + '</td><td>' +  mapaDeNavegacao[mapaDeNavegacao[i].pergunta[2]].name + '</td></tr>');
+          document.write('<tr><td>' + i + '</td><td><a href="http://youtu.be/' + mapaDeNavegacao[i].video + '" target="_blank">' +  mapaDeNavegacao[i].name + '</a></td><td>' +  mapaDeNavegacao[mapaDeNavegacao[i].pergunta[0]].name + '</td><td>' +   mapaDeNavegacao[mapaDeNavegacao[i].pergunta[1]].name + '</td><td>' +  mapaDeNavegacao[mapaDeNavegacao[i].pergunta[2]].name + '</td></tr>');
         }
       </script>
     </table>
