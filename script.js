@@ -157,14 +157,8 @@ $(document).ready(function() {
         console.log(preld + "    "  + activePlayer);
       }
     } else {
-      console.log("mute?");
-      for(i=0;i<4;i++){
-        console.log(curPlayer[i]);
-        curPlayer[i].pauseVideo();
-        console.log(curPlayer[i]);
-      }
-      $('main').css('display', 'grid');
-      $('section').css('display', 'none');
+      console.log("to main?");
+      window.location.hash = "";
     }
   }
 
