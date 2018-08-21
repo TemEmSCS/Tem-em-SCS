@@ -148,6 +148,7 @@ $(document).ready(function() {
           $('#player'+mainpl).addClass('main');
           activePlayer = mainpl; // trioca div e ajusta novo player ativo
         } else {
+
           curPlayer[activePlayer].loadVideoById(personagem.video);
         }
         //automa menu?
@@ -157,6 +158,7 @@ $(document).ready(function() {
       }
     } else {
       console.log("deu ruim");
+      mudaPagina(entrada);
     }
   }
 
