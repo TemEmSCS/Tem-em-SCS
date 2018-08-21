@@ -156,11 +156,13 @@ $(document).ready(function() {
         console.log(preld + "    "  + activePlayer);
       }
     } else {
-      console.log("faltou o ;");
       for(i=0;i<4;i++){
+        console.log($('#player')[i]);
         let aclass = "";
-        if(i == 0) { aclass = " main" };
-        $('.player')[i].replaceWith('<div id="player'+ i +'" class="player'+ aclass +'"></div>');
+        if(i == 0) {
+          aclass = " main"
+        };
+        $('#player')[i].replaceWith('<div id="player'+ i +'" class="player'+ aclass +'"></div>');
       }
       $('main').css('display', 'grid');
       $('section').css('display', 'none');
