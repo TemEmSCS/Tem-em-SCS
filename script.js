@@ -159,6 +159,7 @@ $(document).ready(function() {
     } else {
       console.log("deu ruim");
       console.log(window.location);
+      curPlayer[activePlayer].pauseVideo()
       $('main').css('display', 'grid');
       $('section').css('display', 'none');
     }
