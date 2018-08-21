@@ -158,7 +158,7 @@ $(document).ready(function() {
       }
     } else {
       console.log("deu ruim");
-      mudaPagina(entrada);
+      mudaPagina(entrada)
     }
   }
 
