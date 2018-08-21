@@ -158,6 +158,7 @@ $(document).ready(function() {
       }
     } else {
       console.log("back to index");
+      window.location.hash = "";
       mudaPagina();
     }
   }
