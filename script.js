@@ -156,7 +156,7 @@ $(document).ready(function() {
         console.log(preld + "    "  + activePlayer);
       }
     } else {
-      console.log('talv ez');
+      console.log('talvez');
       for(i=0;i<4;i++){
         let newNode = document.createElement('div');
         if(i == 0){
@@ -164,7 +164,7 @@ $(document).ready(function() {
         } else {
           newNode.className = 'player main';
         }
-        newNode.id = 'player' + i;
+        newNode.setAttribute('id', 'player' + i);
         $('.player')[0].parentNode.replaceChild(newNode, $('.player')[0]);
       }
       $('main').css('display', 'grid');
