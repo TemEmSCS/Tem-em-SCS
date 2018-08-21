@@ -158,6 +158,7 @@ $(document).ready(function() {
     } else {
       console.log("to main?");
       window.location.hash = "";
+      mudaPagina("");
     }
   }
 
