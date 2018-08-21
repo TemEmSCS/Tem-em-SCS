@@ -156,7 +156,7 @@ $(document).ready(function() {
         console.log(preld + "    "  + activePlayer);
       }
     } else {
-      console.log("foi agora?");
+      console.log("devagarinho até embaixo...");
       for(i=0;i<4;i++){
         let aclass = "";
         if(i == 0) { aclass = " main" }
