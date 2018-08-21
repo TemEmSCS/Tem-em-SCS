@@ -138,6 +138,7 @@ $(document).ready(function() {
       } else { // depois dos players criados
         let mainpl = 'erro';
         for(i=0;i<4;i++){
+          console.log(curPlayer[i]);
           if(curPlayer[i].getVideoUrl().replace("https://www.youtube.com/watch?v=", "") == personagem.video)  {
             mainpl = i;
           }
