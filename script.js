@@ -162,7 +162,7 @@ $(document).ready(function() {
         if(i == 0) {
           aclass = " main"
         };
-        $('#player')[i].replaceWith('<div id="player'+ i +'" class="player'+ aclass +'"></div>');
+        $('#player')[0].replaceWith('<div id="player'+ i +'" class="player'+ aclass +'"></div>');
       }
       $('main').css('display', 'grid');
       $('section').css('display', 'none');
