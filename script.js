@@ -164,7 +164,7 @@ $(document).ready(function() {
         } else {
           newNode.className = 'player main';
         }
-        newNode.attr('id', 'player' + i);
+        newNode.id = 'player' + i;
         $('.player')[0].parentNode.replaceChild(newNode, $('.player')[0]);
       }
       $('main').css('display', 'grid');
