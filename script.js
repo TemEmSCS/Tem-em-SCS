@@ -156,10 +156,10 @@ $(document).ready(function() {
         console.log(preld + "    "  + activePlayer);
       }
     } else {
-      console.log("devagarinho até embaixo...");
+      console.log("faltou o ;");
       for(i=0;i<4;i++){
         let aclass = "";
-        if(i == 0) { aclass = " main" }
+        if(i == 0) { aclass = " main" };
         $('.player')[i].replaceWith('<div id="player'+ i +'" class="player'+ aclass +'"></div>');
       }
       $('main').css('display', 'grid');
