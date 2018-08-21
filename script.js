@@ -156,7 +156,7 @@ $(document).ready(function() {
         console.log(preld + "    "  + activePlayer);
       }
     } else {
-      console.log('talvez');
+      console.log('agora vai');
       for(i=0;i<4;i++){
         let newNode = document.createElement('div');
         if(i == 0){
@@ -165,7 +165,7 @@ $(document).ready(function() {
           newNode.className = 'player main';
         }
         newNode.setAttribute('id', 'player' + i);
-        $('.player')[0].parentNode.replaceChild(newNode, $('.player')[0]);
+        $('.player')[i].parentNode.replaceChild(newNode, $('.player')[i]);
       }
       $('main').css('display', 'grid');
       $('section').css('display', 'none');
