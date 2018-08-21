@@ -156,7 +156,7 @@ $(document).ready(function() {
         console.log(preld + "    "  + activePlayer);
       }
     } else {
-      console.log("to main?");
+      console.log("foi agora?");
       window.location.hash = "";
       mudaPagina("");
     }
