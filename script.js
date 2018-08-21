@@ -158,7 +158,6 @@ $(document).ready(function() {
     } else {
       console.log("foi agora?");
       window.location.hash = "";
-      mudaPagina("");
     }
   }
 
