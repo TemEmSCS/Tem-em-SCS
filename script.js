@@ -157,7 +157,7 @@ $(document).ready(function() {
         console.log(preld + "    "  + activePlayer);
       }
     } else {
-      console.log("back to index");
+      console.log("mute?");
       curPlayer[activePlayer].pauseVideo();
       $('main').css('display', 'grid');
       $('section').css('display', 'none');
