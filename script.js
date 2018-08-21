@@ -156,13 +156,16 @@ $(document).ready(function() {
         console.log(preld + "    "  + activePlayer);
       }
     } else {
+      console.log('talv ez');
       for(i=0;i<4;i++){
-        console.log($('.player')[i]);
-        let aclass = "";
-        if(i == 0) {
-          aclass = " main"
-        };
-        $('.player')[0].replaceWith('<div id="player'+ i +'" class="player'+ aclass +'"></div>');
+        let newNode = document.createElement('div');
+        if(i == 0){
+          newNode.className = 'player';
+        } else {
+          newNode.className = 'player main';
+        }
+        newNode.attr('id', 'player' + i);
+        $('.player')[0].parentNode.replaceChild(newNode, $('.player')[0]);
       }
       $('main').css('display', 'grid');
       $('section').css('display', 'none');
