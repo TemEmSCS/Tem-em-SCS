@@ -158,7 +158,8 @@ $(document).ready(function() {
       }
     } else {
       console.log("deu ruim");
-      mudaPagina(entrada);
+      $('main').css('display', 'grid');
+      $('section').css('display', 'none');
     }
   }
 
