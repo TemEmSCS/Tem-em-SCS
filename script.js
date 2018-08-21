@@ -158,6 +158,7 @@ $(document).ready(function() {
       }
     } else {
       console.log("deu ruim");
+      console.log(window.location);
       $('main').css('display', 'grid');
       $('section').css('display', 'none');
     }
