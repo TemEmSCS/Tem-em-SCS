@@ -156,13 +156,12 @@ $(document).ready(function() {
         console.log(preld + "    "  + activePlayer);
       }
     } else {
-      console.log('agora vai');
       for(i=0;i<4;i++){
         let newNode = document.createElement('div');
         if(i == 0){
-          newNode.className = 'player';
-        } else {
           newNode.className = 'player main';
+        } else {
+          newNode.className = 'player';
         }
         newNode.setAttribute('id', 'player' + i);
         $('.player')[i].parentNode.replaceChild(newNode, $('.player')[i]);
