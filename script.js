@@ -148,7 +148,6 @@ $(document).ready(function() {
           $('#player'+mainpl).addClass('main');
           activePlayer = mainpl; // trioca div e ajusta novo player ativo
         } else {
-
           curPlayer[activePlayer].loadVideoById(personagem.video);
         }
         //automa menu?
@@ -158,7 +157,9 @@ $(document).ready(function() {
       }
     } else {
       console.log("mute?");
-      curPlayer[activePlayer].pauseVideo();
+      for(i=0;i<4;i++){
+        curPlayer[i].pauseVideo();
+      }
       $('main').css('display', 'grid');
       $('section').css('display', 'none');
     }
