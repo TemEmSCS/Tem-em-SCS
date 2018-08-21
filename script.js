@@ -157,6 +157,11 @@ $(document).ready(function() {
       }
     } else {
       console.log("foi agora?");
+      for(i=0;i<4;i++){
+        let aclass = "";
+        if(i == 0) { aclass = " main" }
+        $('.player')[i].replaceWith('<div id="player'+ i +'" class="player'+ aclass +'"></div>');
+      }
       $('main').css('display', 'grid');
       $('section').css('display', 'none');
     }
