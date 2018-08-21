@@ -157,7 +157,7 @@ $(document).ready(function() {
       }
     } else {
       for(i=0;i<4;i++){
-        console.log($('#player')[i]);
+        console.log($('.player')[i]);
         let aclass = "";
         if(i == 0) {
           aclass = " main"
