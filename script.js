@@ -158,9 +158,7 @@ $(document).ready(function() {
       }
     } else {
       console.log("back to index");
-      curPlayer[activePlayer].pauseVideo();
-      $('main').css('display', 'grid');
-      $('section').css('display', 'none');
+      mudaPagina();
     }
   }
 
