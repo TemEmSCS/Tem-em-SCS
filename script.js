@@ -158,8 +158,8 @@ $(document).ready(function() {
       }
     } else {
       console.log("back to index");
-      window.location.hash = "";
-      //mudaPagina();
+      $('main').css('display', 'grid');
+      $('section').css('display', 'none');
     }
   }
 
