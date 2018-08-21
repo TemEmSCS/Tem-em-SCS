@@ -157,7 +157,8 @@ $(document).ready(function() {
       }
     } else {
       console.log("foi agora?");
-      window.location.hash = "";
+      $('main').css('display', 'grid');
+      $('section').css('display', 'none');
     }
   }
 
