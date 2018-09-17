@@ -1,11 +1,52 @@
-//meu app
+      // Google API
 
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          videoId: 'xxx',
+          playerVars: {rel: 0, showinfo: 0, controls:0, fs: 0, iv_load_policy: 3, modestbranding: 1},
+          events: {
+            'onStateChange': onPlayerStateChange
+          }
+        });
+      }
+      // 5. The API calls this function when the player's state changes.
+      //    The function indicates that when playing a video (state=1),
+      //    the player should play for six seconds and then stop.
+      var done = false;
+      function onPlayerStateChange(event) {
+        switch (event.data) {
+          case YT.PlayerState.PLAYING:
+              document.getElementById('perguntas').classList.remove('show');
+              break;
+          case YT.PlayerState.PAUSED:
+          case YT.PlayerState.ENDED:
+              document.getElementById('perguntas').classList.add('show');
+              break;
+        }
+      }
+
+      // Automação Perguntas -- Videos
+      document.addEventListener('keypress', function(e) {
+        if (e.key === ' ' || e.key === 'Spacebar') {
+          // ' ' is standard, 'Spacebar' was used by IE9 and Firefox < 37
+          e.preventDefault();
+          player.getPlayerState() == 1 ? player.pauseVideo() : player.playVideo();
+        }
+      })
+
+
+//meu app
 new Vue({
         el: '#app',
         data: {
           tag: "",
-          page: "main",
-          curVideo: "",
+          mainPage: true,
           isActive: false,
           tempList: [],
           perguntas: [
@@ -73,13 +114,17 @@ new Vue({
         },
         methods: {
           pagina: function(pag) {
-            this.page = pag
+            this.mainPage = false
             this.tempList = JSON.parse(JSON.stringify(this.perguntas[pag].pergunta)) //limpa reatividade
-            this.curVideo = this.perguntas[pag].video
+            player.loadVideoById(this.perguntas[pag].video)
           },
           navigation: function(index) {
-            this.curVideo = this.tempList[index].video
+            player.loadVideoById(this.tempList[index].video)
             this.tempList.splice(index, 1)
+          },
+          toMain: function() {
+            player.pauseVideo()
+            this.mainPage = true
           }
         },
         computed: {

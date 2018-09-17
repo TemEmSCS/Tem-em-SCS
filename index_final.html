@@ -14,38 +14,35 @@
     </script>
     <!-- Meus Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
-    <script src="vue-youtube.js"></script>
   </head>
   <body>
 
     <main id="app">
 
       <nav>
-        <header v-if="tempList.length < 0">
-            <a href="#" class="menuback" @click="tempList = []">Tem <span class="dropdown">{{ tag }}</span>em São Caetano?</a>
+        <header v-if="mainPage === false">
+            <a href="#" class="menuback" @click="toMain">Tem <span class="dropdown">{{ tag }}</span>em São Caetano?</a>
         </header>
-        <aside><a href="#" v-bind:class="{ menuback: isActive }" @click="isActive = !isActive">{{ toggleSobre }}</a></aside>
+        <aside><a href="#" :class="{ menuback: isActive }" @click="isActive = !isActive">{{ toggleSobre }}</a></aside>
       </nav>
 
-      <article v-if="tempList.length === 0">
+      <article v-if="mainPage === true">
         <header>Tem <span class="dropdown"> {{ tag }} </span> em São Caetano?</header>
         <a v-for="p in perguntas" href="#" :id="p.video" class="abertura" @mouseover="tag = p.name" @click="pagina(perguntas.indexOf(p))"><img :src="p.img" :data="p.name" /></a>
       </article>
 
       <article v-else>
-        <nav>
-          <header>
-            <a href="#" class="menuback" @click="tempList = []">Tem <span class="dropdown">{{ tag }}</span>em São Caetano?</a>
-        </header>
-        <aside><a href="#" v-bind:class="{ menuback: isActive }" @click="isActive = !isActive">{{ toggleSobre }}</a></aside>
-        </nav>
-        <youtube :video-id="curVideo"></youtube>
-        <ul class="perguntas">
+        <ul id="perguntas" class="perguntas" v-if="tempList.length > 0">
           <li v-for="pergunta in tempList"><a href="#" @click="navigation(tempList.indexOf(pergunta))">{{ pergunta.name }}</a></li>
+        </ul>
+        <ul id="perguntas" class="perguntas" v-else>
+          <li><a href="#" @click="toMain">Retornar ao início</a></li>
         </ul>
       </article>
 
-      <footer v-bind:class="{ show: isActive }">
+      <div class="player" v-show="mainPage === false"><video id="player"></video></div>
+
+      <footer :class="{ show: isActive }">
         <div class="sobre">
           <p>SOBRE:</p>
           <p>Essa plataforma online é um transbordamento do material rico e diverso recolhido durante o semestre letivo de trabalhos com a EJA da EME Prof. Vicente Bastos. Seu formato pretende ser mais que o de um documentário online comum, um webdoc, para poder contemplar melhor as contribuições dos entrevistados e de todo o processo dos alunos. Assim, seu formato pretende simular uma conversa que segue rolando normalmente, com perguntas que o navegante da plataforma pode escolher em cada trecho de fala, de acordo com o seu interesse pelo tema que ela propõe, e se entregar a um diálogo com figuras únicas que contam um pouco mais da história de todos nós.</p>
@@ -316,8 +313,5 @@
       </footer>
     </main>
   </body>
-  <script>
-    Vue.use(VueYouTubeEmbed)
-  </script>
   <script src="app.js"></script>
 </html>
