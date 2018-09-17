@@ -15,7 +15,6 @@
     <!-- Meus Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
     <script src="vue-youtube.js"></script>
-
   </head>
   <body>
 
@@ -40,8 +39,7 @@
         </header>
         <aside><a href="#" v-bind:class="{ menuback: isActive }" @click="isActive = !isActive">{{ toggleSobre }}</a></aside>
         </nav>
-        <youtube :video-id="videoId" ref="youtube" @playing="playing"></youtube>
-        <button @click="playVideo">play</button>
+        <youtube :video-id="curVideo"></youtube>
         <ul class="perguntas">
           <li v-for="pergunta in tempList"><a href="#" @click="navigation(tempList.indexOf(pergunta))">{{ pergunta.name }}</a></li>
         </ul>
@@ -318,5 +316,8 @@
       </footer>
     </main>
   </body>
+  <script>
+    Vue.use(VueYouTubeEmbed)
+  </script>
   <script src="app.js"></script>
 </html>
