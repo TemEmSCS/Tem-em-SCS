@@ -8,12 +8,16 @@
     <script src="jquery-3.3.1.min.js"></script>
     <script>
     $(document).ready(function() {
-      $.getJSON('http://gdata.youtube.com/feeds/api/users/UCKNgM8kCUcas5qB2zoEUHKg/uploads?alt=json', function(data) {
-          console.log(data);
-          for(var i in data.feed.entry) {
-            console.log("Title : "+data.feed.entry[i].title.$t); // title
-            console.log("Description : "+data.feed.entry[i].content.$t); // description
-          }
+
+      let channelId : 'UCKNgM8kCUcas5qB2zoEUHKg';
+      let myAPIKey: 'AIzaSyDT3WRwQlowiikHrvXzb0g1qMsC54Ztm3M';
+
+      var videosURL = "https://www.googleapis.com/youtube/v3/playlistItems?playlistId="+ channelId  +"&key=" + myAPIKey + "&fields=items&part=snippet&maxResults=6&callback=?";
+      $.getJSON(videosURL, function(data) {
+      $.each(data.items, function(i,val) {
+      console.log(val.snippet.title);
+      console.log(val.snippet.resourceId.videoId);
+       });
       });
     });
     </script>
