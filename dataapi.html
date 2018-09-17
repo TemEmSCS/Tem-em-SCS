@@ -9,17 +9,19 @@
     <script>
     $(document).ready(function() {
 
-      let channelId = 'UCKNgM8kCUcas5qB2zoEUHKg';
-      let myAPIKey = 'AIzaSyDT3WRwQlowiikHrvXzb0g1qMsC54Ztm3M';
+      $.get(
+        "https://www.googleapis.com/youtube/v3/search",{
+          part : 'snippet',
+          channelId : 'UCKNgM8kCUcas5qB2zoEUHKg',
+          type : 'video',
+          myAPIKey: 'AIzaSyDT3WRwQlowiikHrvXzb0g1qMsC54Ztm3M'},
+          function(data) {
+            $.each( data.items, function( i, item ) {
+              document.write(item);
+            })
+          }
+      );
 
-      var videosURL = "https://www.googleapis.com/youtube/v3/playlistItems?playlistId="+ channelId  +"&key=" + myAPIKey + "&fields=items&part=snippet&maxResults=6&callback=?";
-      $.getJSON(videosURL, function(data) {
-      $.each(data.items, function(i,val) {
-      console.log(val.snippet.title);
-      console.log(val.snippet.resourceId.videoId);
-       });
-      });
-    });
     </script>
   </body>
 </html>
