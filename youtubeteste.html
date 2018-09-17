@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>Tem em São Caetano?</title>
+    <link rel="stylesheet" href="aparencia.css">
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121172684-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-121172684-1');
+    </script>
+    <!-- Meus Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+    <script src="vue-youtube.js"></script>
+
+  </head>
+  <body>
+
+    <youtube :video-id="videoId" :player-vars="playerVars" @playing="playing"></youtube>
+
+    <script>
+    </script>
+
+  </body>
