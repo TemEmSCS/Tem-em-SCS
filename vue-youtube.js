@@ -1,244 +1,181 @@
 /*!
- * Vue YouTube Embed version 2.2.1
- * under MIT License copyright 2018 kaorun343
+ * vue-youtube v1.2.5
+ * (c) 2018 Antério Vieira
+ * Released under the MIT License.
  */
-// fork from https://github.com/brandly/angular-youtube-embed
 
-if (!String.prototype.includes) {
-  String.prototype.includes = function () {
-    return String.prototype.indexOf.apply(this, arguments) !== -1
-  };
+(function (global, factory) {
+	typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
+	typeof define === 'function' && define.amd ? define(['exports'], factory) :
+	(factory((global.VueYoutube = global.VueYoutube || {})));
+}(this, (function (exports) { 'use strict';
+
+var commonjsGlobal = typeof window !== 'undefined' ? window : typeof global !== 'undefined' ? global : typeof self !== 'undefined' ? self : {};
+
+
+
+
+
+function createCommonjsModule(fn, module) {
+	return module = { exports: {} }, fn(module, module.exports), module.exports;
 }
 
-var youtubeRegexp = /https?:\/\/(?:[0-9A-Z-]+\.)?(?:youtu\.be\/|youtube(?:-nocookie)?\.com\S*[^\w\s-])([\w-]{11})(?=[^\w-]|$)(?![?=&+%\w.-]*(?:['"][^<>]*>|<\/a>))[?=&+%\w.-]*/ig;
-var timeRegexp = /t=(\d+)[ms]?(\d+)?s?/;
-
-/**
- * get id from url
- * @param  {string} url url
- * @return {string}     id
- */
-function getIdFromURL (url) {
-  var id = url.replace(youtubeRegexp, '$1');
-
-  if (id.includes(';')) {
-    var pieces = id.split(';');
-
-    if (pieces[1].includes('%')) {
-      var uriComponent = decodeURIComponent(pieces[1]);
-      id = ("http://youtube.com" + uriComponent).replace(youtubeRegexp, '$1');
-    } else {
-      id = pieces[0];
-    }
-  } else if (id.includes('#')) {
-    id = id.split('#')[0];
+var getYoutubeId = createCommonjsModule(function (module, exports) {
+(function (root, factory) {
+  {
+    module.exports = factory();
   }
+}(commonjsGlobal, function (exports) {
 
-  return id
-}
-
-/**
- * get time from url
- * @param  {string} url url
- * @return {number}     time
- */
-function getTimeFromURL (url) {
-  if ( url === void 0 ) url = '';
-
-  var times = url.match(timeRegexp);
-
-  if (!times) {
-    return 0
-  }
-
-  var full = times[0];
-  var minutes = times[1];
-  var seconds = times[2];
-
-  if (typeof seconds !== 'undefined') {
-    seconds = parseInt(seconds, 10);
-    minutes = parseInt(minutes, 10);
-  } else if (full.includes('m')) {
-    minutes = parseInt(minutes, 10);
-    seconds = 0;
-  } else {
-    seconds = parseInt(minutes, 10);
-    minutes = 0;
-  }
-
-  return seconds + (minutes * 60)
-}
-
-var container = {
-  scripts: [],
-  events: {},
-
-  run: function run () {
-    var this$1 = this;
-
-    this.scripts.forEach(function (callback) {
-      callback(this$1.YT);
-    });
-    this.scripts = [];
-  },
-
-  register: function register (callback) {
-    var this$1 = this;
-
-    if (this.YT) {
-      this.Vue.nextTick(function () {
-        callback(this$1.YT);
-      });
-    } else {
-      this.scripts.push(callback);
+  return function (url, opts) {
+    if (opts == undefined) {
+      opts = {fuzzy: true};
     }
-  }
-};
 
-var pid = 0;
+    if (/youtu\.?be/.test(url)) {
 
-var YouTubePlayer = {
-  props: {
-    playerHeight: {
-      type: [String, Number],
-      default: '390'
-    },
-    playerWidth: {
-      type: [String, Number],
-      default: '640'
-    },
-    playerVars: {
-      type: Object,
-      default: function () { return ({ autoplay: 0, time: 0 }); }
-    },
-    videoId: {
-      type: String
-    },
-    mute: {
-      type: Boolean,
-      default: false
-    }
-  },
-  render: function render (h) {
-    return h('div', [
-      h('div', { attrs: { id: this.elementId }})
-    ])
-  },
-  template: '<div><div :id="elementId"></div></div>',
-  watch: {
-    playerWidth: 'setSize',
-    playerHeight: 'setSize',
-    videoId: 'update',
-    mute: 'setMute'
-  },
-  data: function data () {
-    pid += 1;
-    return {
-      elementId: ("youtube-player-" + pid),
-      player: {}
-    }
-  },
-  methods: {
-    setSize: function setSize () {
-      this.player.setSize(this.playerWidth, this.playerHeight);
-    },
-    setMute: function setMute (value) {
-      if (value) {
-        this.player.mute();
-      } else {
-        this.player.unMute();
+      // Look first for known patterns
+      var i;
+      var patterns = [
+        /youtu\.be\/([^#\&\?]{11})/,  // youtu.be/<id>
+        /\?v=([^#\&\?]{11})/,         // ?v=<id>
+        /\&v=([^#\&\?]{11})/,         // &v=<id>
+        /embed\/([^#\&\?]{11})/,      // embed/<id>
+        /\/v\/([^#\&\?]{11})/         // /v/<id>
+      ];
+
+      // If any pattern matches, return the ID
+      for (i = 0; i < patterns.length; ++i) {
+        if (patterns[i].test(url)) {
+          return patterns[i].exec(url)[1];
+        }
       }
-    },
-    update: function update (videoId) {
-      var name = (this.playerVars.autoplay ? 'load' : 'cue') + "VideoById";
-      if (this.player.hasOwnProperty(name)) {
-        this.player[name](videoId);
-      } else {
-        setTimeout(function () {
-          this.update(videoId);
-        }.bind(this), 100);
-      }
-    }
-  },
-  mounted: function mounted () {
-    var this$1 = this;
 
-    container.register(function (YouTube) {
-      var ref = this$1;
-      var playerHeight = ref.playerHeight;
-      var playerWidth = ref.playerWidth;
-      var playerVars = ref.playerVars;
-      var videoId = ref.videoId;
-
-      this$1.player = new YouTube.Player(this$1.elementId, {
-        height: playerHeight,
-        width: playerWidth,
-        playerVars: playerVars,
-        videoId: videoId,
-        events: {
-          onReady: function (event) {
-            this$1.setMute(this$1.mute);
-            this$1.$emit('ready', event);
-          },
-          onStateChange: function (event) {
-            if (event.data !== -1) {
-              this$1.$emit(container.events[event.data], event);
-            }
-          },
-          onError: function (event) {
-            this$1.$emit('error', event);
+      if (opts.fuzzy) {
+        // If that fails, break it apart by certain characters and look
+        // for the 11 character key
+        var tokens = url.split(/[\/\&\?=#\.\s]/g);
+        for (i = 0; i < tokens.length; ++i) {
+          if (/^[^#\&\?]{11}$/.test(tokens[i])) {
+            return tokens[i];
           }
         }
-      });
-    });
+      }
+    }
+
+    return null;
+  };
+
+}));
+});
+
+var player = require('youtube-player');
+
+var UNSTARTED = -1;
+var ENDED = 0;
+var PLAYING = 1;
+var PAUSED = 2;
+var BUFFERING = 3;
+var CUED = 5;
+
+var Youtube = {
+  name: 'Youtube',
+  props: {
+    videoId: String,
+    playerVars: {
+      type: Object,
+      default: function () { return ({}); }
+    },
+    height: {
+      type: [Number, String],
+      default: 360
+    },
+    width: {
+      type: [Number, String],
+      default: 640
+    }
+  },
+  data: function data () {
+    return {
+      player: {},
+      events: ( obj = {}, obj[UNSTARTED] = 'unstarted', obj[PLAYING] = 'playing', obj[PAUSED] = 'paused', obj[ENDED] = 'ended', obj[BUFFERING] = 'buffering', obj[CUED] = 'cued', obj )
+    }
+    var obj;
+  },
+  methods: {
+    playerReady: function playerReady (e) {
+      this.$emit('ready', e.target);
+    },
+    playerStateChange: function playerStateChange (e) {
+      if (e.data !== null && e.data !== UNSTARTED) {
+        this.$emit(this.events[e.data], e.target);
+      }
+    },
+    playerError: function playerError (e) {
+      this.$emit('error', e.target);
+    },
+    updatePlayer: function updatePlayer (videoId) {
+      if (!videoId) {
+        this.player.stopVideo();
+        return
+      }
+
+      if (this.playerVars.autoplay === 1) {
+        this.player.loadVideoById({ videoId: videoId });
+        return
+      }
+
+      this.player.cueVideoById({ videoId: videoId });
+    }
+  },
+  watch: {
+    videoId: 'updatePlayer'
   },
   beforeDestroy: function beforeDestroy () {
     if (this.player !== null && this.player.destroy) {
       this.player.destroy();
+      delete this.player;
     }
-    delete this.player;
+  },
+  mounted: function mounted () {
+    window.YTConfig = {
+      host: 'https://www.youtube.com'
+    };
+
+    this.player = player(this.$el, {
+      width: this.width,
+      height: this.height,
+      videoId: this.videoId,
+      playerVars: this.playerVars
+    });
+
+    this.player.on('ready', this.playerReady);
+    this.player.on('stateChange', this.playerStateChange);
+    this.player.on('error', this.playerError);
+  },
+  render: function render (h) {
+    return h('div')
   }
 };
 
-var index = {
-  install: function install (Vue, options) {
-    if ( options === void 0 ) options = {};
+function plugin (Vue) {
+  Vue.prototype.$youtube = {
+    getIdFromUrl: getYoutubeId
+  };
 
-    container.Vue = Vue;
-    YouTubePlayer.ready = YouTubePlayer.mounted;
-    var global = options.global; if ( global === void 0 ) global = true;
-    var componentId = options.componentId; if ( componentId === void 0 ) componentId = 'youtube';
+  Vue.component('youtube', Youtube);
+}
 
-    if (global) {
-      // if there is a global component with "youtube" identifier already taken
-      // then we should let user to pass a new identifier.
-      Vue.component(componentId, YouTubePlayer);
-    }
-    Vue.prototype.$youtube = { getIdFromURL: getIdFromURL, getTimeFromURL: getTimeFromURL };
+if (typeof window !== 'undefined' && window.Vue) {
+  window.Vue.use(plugin);
+}
 
-    if (typeof window !== 'undefined' && typeof document !== 'undefined') {
-      var tag = document.createElement('script');
-      tag.src = 'https://www.youtube.com/player_api';
-      var firstScriptTag = document.getElementsByTagName('script')[0];
-      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+var version = '1.2.5';
 
-      window.onYouTubeIframeAPIReady = function () {
-        container.YT = YT;
-        var PlayerState = YT.PlayerState;
+exports['default'] = plugin;
+exports.Youtube = Youtube;
+exports.version = version;
 
-        container.events[PlayerState.ENDED] = 'ended';
-        container.events[PlayerState.PLAYING] = 'playing';
-        container.events[PlayerState.PAUSED] = 'paused';
-        container.events[PlayerState.BUFFERING] = 'buffering';
-        container.events[PlayerState.CUED] = 'cued';
+Object.defineProperty(exports, '__esModule', { value: true });
 
-        container.Vue.nextTick(function () {
-          container.run();
-        });
-      };
-    }
-  }
-};
-
-export default index;
-export { YouTubePlayer, getIdFromURL, getTimeFromURL };
+})));
