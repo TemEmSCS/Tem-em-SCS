@@ -9,8 +9,8 @@
     <script>
     $(document).ready(function() {
 
-      let channelId : 'UCKNgM8kCUcas5qB2zoEUHKg';
-      let myAPIKey: 'AIzaSyDT3WRwQlowiikHrvXzb0g1qMsC54Ztm3M';
+      let channelId = 'UCKNgM8kCUcas5qB2zoEUHKg';
+      let myAPIKey = 'AIzaSyDT3WRwQlowiikHrvXzb0g1qMsC54Ztm3M';
 
       var videosURL = "https://www.googleapis.com/youtube/v3/playlistItems?playlistId="+ channelId  +"&key=" + myAPIKey + "&fields=items&part=snippet&maxResults=6&callback=?";
       $.getJSON(videosURL, function(data) {
