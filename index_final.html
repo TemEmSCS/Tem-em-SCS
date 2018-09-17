@@ -10,22 +10,18 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'UA-121172684-1');
     </script>
     <!-- Meus Scripts -->
-    <script src="map_2.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
   </head>
   <body>
-    <main>
+
+    <main id="app">
       <header>Tem <span id="line">&nbsp;</span> em São Caetano?</header>
-      <script>
-        for(let i=0; i<12; i++){
-          document.write('<a href="#' + i + '" id="p' + i + '" class="abertura"><img src="img/img_' + (i+1) + '.jpg" data="but' + i + '" /><figcaption id="but' + i + '">' + mapaDeNavegacao[i].name.replace(/(Tem )|( em São Caetano\?)/g, '') + '</figcaption></a>');
-        }
-      </script>
+
+      <a v-for="p in perguntas" :href="" :id="p.video" class="abertura"><img :src="p.img" :data="p.name" /><figcaption :id="p.name"> {{ p.name }} </figcaption></a>
     </main>
-    <div class="loader_warper"><div class="loader"></div></div>
     <section>
       <div id="player0" class="player main">
       </div>
@@ -45,6 +41,7 @@
         <li id="p3"><a href="#"></a></li>
       </ul>
     </section>
+
     <footer>
       <div class="sobre">
         <p>SOBRE:</p>
@@ -315,5 +312,5 @@
       </div>
     </footer>
   </body>
-  <script src="no_jquery.js"></script>
+  <script src="app.js"></script>
 </html>
