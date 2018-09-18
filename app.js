@@ -93,7 +93,7 @@ new Vue({
                             { name: "Indígenas em contexto urbano", video: "55WSDuBLpf4" }]
             },
             {name: "religiões afro", img: "img/img_9.jpg", video: "fRyxu2GBXc0",
-                  pergunta: [{ name: "tania 8", video: "w2-PchRYHrs" },
+                  pergunta: [{ name: "Primeiros Registros", video: "w2-PchRYHrs" },
                             { name: "Um pouco da presença dos orixás no Brasil", video: "E3oALvB26pI" },
                             { name: "A roupa que nos cobre", video: "_t_xiWDTLbQ" }]
             },
