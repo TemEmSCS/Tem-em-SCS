@@ -192,6 +192,10 @@ header {
   white-space: nowrap;
 }
 
+nav .dropdown {
+  font-size: 2em;
+}
+
 footer {
   position: absolute;
   top: 0;

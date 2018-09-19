@@ -76,10 +76,10 @@ new Vue({
                             { name: "Cultura popular e Preconceito", video: "romJ5kqljNA" },
                             { name: "Expressões populares e a rua", video: "6st3jYM6KZQ" }]
             },
-            {name: "nordestinos", img: "img/img_6.jpg", video: "9acozs8E3ds",
-                  pergunta: [{ name: "Diversidade nordestina", video: "u7TzRkFsc5E" },
-                            { name: "Migração e solidariedade", video: "CuNh-B0YFc8" },
-                            { name: "Território migrante", video: "XTETFClPB7k" }]
+            {name: "religiões afro", img: "img/img_9b.png", video: "fRyxu2GBXc0",
+                  pergunta: [{ name: "Primeiros Registros", video: "w2-PchRYHrs" },
+                            { name: "Um pouco da presença dos orixás no Brasil", video: "E3oALvB26pI" },
+                            { name: "A roupa que nos cobre", video: "_t_xiWDTLbQ" }]
             },
             {name: "memória", img: "img/img_7b.png", video: "V-bxD1h8_tY",
                   pergunta: [{ name: "Importância da Memória", video: "hTffqEO37pQ" },
@@ -92,10 +92,10 @@ new Vue({
                             { name: "Auto reconhecimento", video: "Jzx1alpSFIk" },
                             { name: "Indígenas em contexto urbano", video: "55WSDuBLpf4" }]
             },
-            {name: "religiões afro", img: "img/img_9.jpg", video: "fRyxu2GBXc0",
-                  pergunta: [{ name: "Primeiros Registros", video: "w2-PchRYHrs" },
-                            { name: "Um pouco da presença dos orixás no Brasil", video: "E3oALvB26pI" },
-                            { name: "A roupa que nos cobre", video: "_t_xiWDTLbQ" }]
+            {name: "nordestinos", img: "img/img_6.jpg", video: "9acozs8E3ds",
+                  pergunta: [{ name: "Diversidade nordestina", video: "u7TzRkFsc5E" },
+                            { name: "Migração e solidariedade", video: "CuNh-B0YFc8" },
+                            { name: "Território migrante", video: "XTETFClPB7k" }]
             },
             {name: "racismo", img: "img/img_10.jpg", video: "32iuclrqm9A",
                   pergunta: [{ name: "Empretecer", video: "x03apDoPDFs" },
